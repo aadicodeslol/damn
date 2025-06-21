@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>for you, my future doc</title>
+
+    <!-- Optional base tag: uncomment and update if hosted in a repo like github.com/username/neet-care-kit -->
+    <!-- <base href="/neet-care-kit/"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>for you, my future doc </h1>
+    <button id="darkModeToggle" title="toggle dark mode">🌙</button>
+    <div class="message-box">
+      <p>
+        hello sweetheart,<br><br>
+        this is your safe place.<br>
+        no judgement, no "one more chapter", nothing.<br>
+        only me, you, motivation,<br>
+        and reminding you that you're capable of amazing things &lt;3
+      </p>
+    </div>
+    <div class="countdown">
+      neet 2026 is in: <span id="timer">loading...</span>
+    </div>
+    <button class="love-btn" onclick="toggleLetter()">💌 open to smile ^^</button>
+    <div class="love-letter hidden" id="loveLetter">
+      <h2>from your future husband 💌</h2>
+      <p>
+        my love,<br><br>
+        i know this journey is hard, and i know how much pressure you feel every single day. but in all of that, i want you to remember — you’re not alone. mi ahey n, always cheering for you, always believing in you.<br><br>
+        ek exam cant measure your brilliance, your kindness, or your strength. you are already more than enough. and one day, when you wear that white coat, i’ll be the proudest man alive.<br><br>
+        until then, let me be your comfort, your biggest fan and your safe place.<br><br>
+        with all my love and support,<br>
+        your future husband 🤍
+      </p>
+    </div>
+    <div class="btns">
+      <button onclick="toggleSpotify()" class="spotify-btn">mooooousic</button>
+      <button onclick="showAffirmation()"> "feel good"</button>
+      <button class="hug-btn" onclick="sendHug()">endless hugs !!</button>
+      <div id="hugContainer"></div>
+      <button class="reset-hugs-btn" onclick="resetHugs()">reset hugs</button>
+      <p id="hugCount" class="hug-count">hugs sent: 0</p>
+      <button onclick="openSpotify()">maharani <3</button>
+    </div>
+    <div class="diary-btn-container">
+      <button onclick="document.getElementById('diaryPopup').classList.remove('hidden')">DIARY~</button>
+    </div>
+    <div id="diaryPopup" class="popup hidden">
+      <h2>dear diary....</h2>
+      <input type="date" id="entryDate" />
+      <textarea id="diaryEntry" placeholder="write your heart out..."></textarea>
+      <div class="diary-buttons">
+        <button onclick="saveDiary()">💾 save</button>
+        <button onclick="clearDiary()">🧽 clear</button>
+        <button onclick="closeDiary()">❌ close</button>
+      </div>
+    </div>
+    <div id="popup">
+      <span id="popupText"></span><br><br>
+      <button onclick="closePopup()">close</button>
+    </div>
+    <div id="popupBackdrop"></div>
+    <div class="heart">♥</div>
+    <div id="affirmationPopup" class="popup hidden">
+      <p id="affirmationText"></p>
+    </div>
+    <div class="shooting-stars"></div>
+    <div class="spotify-overlay">
+      <iframe 
+        src="https://open.spotify.com/embed/playlist/7Lb9ccV1UaTk6x6CX4ztH1?utm_source=generator"
+        width="600" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
+      </iframe>
+    </div>
+    <p class="footer-tag">made with ridiculous love</p>
+  </body>
+</html>
